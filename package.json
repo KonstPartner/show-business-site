@@ -1,0 +1,24 @@
+{
+  "name": "show-business-site",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite preview --open",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "sass": "^1.93.2",
+    "vite": "^7.1.12"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not dead"
+  ]
+}
