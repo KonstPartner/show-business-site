@@ -1,0 +1,16 @@
+@use '../base/variables' as *;
+
+.main {
+  padding: 40px 80px;
+
+  &__news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px 40px;
+  }
+
+  @media (max-width: 780px) {
+    padding-inline: 40px;
+  }
+}
