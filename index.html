@@ -14,24 +14,27 @@
       <div class="container header__bar">
         <a href="/" class="header__logo">SHOW BUSINESS</a>
 
-        <nav class="header__nav menu" aria-label="Primary navigation">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home</a>
+        <nav class="header__menu" aria-label="Primary navigation">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Home</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Explore</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Explore</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Inspiration</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Inspiration</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact us</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Contact us</a>
             </li>
           </ul>
         </nav>
-
-        <button class="button button_primary header__cta" type="button">Log in</b>
+        <div class="header__cta-wrapper">
+          <button class="button button--primary header__cta" type="button">
+            Log in
+          </button>
+        </div>
 
         <button
           class="header__burger"
@@ -40,9 +43,9 @@
           aria-controls="mobile-sidebar"
           aria-expanded="false"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
         </button>
       </div>
 
@@ -52,7 +55,6 @@
         class="sidebar"
         id="mobile-sidebar"
         aria-label="Mobile navigation"
-        
         tabindex="-1"
       >
         <button class="sidebar__close" type="button" aria-label="Close menu">
