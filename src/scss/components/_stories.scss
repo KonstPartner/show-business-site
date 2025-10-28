@@ -1,0 +1,103 @@
+@use '../base/variables' as *;
+
+.stories {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__title {
+    margin-left: 48px;
+    color: $brand;
+    font-family: $font-text;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 23.5px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 780px) {
+      gap: 20px;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__header {
+    display: flex;
+    gap: 13px;
+    padding-right: 19px;
+  }
+
+  &__number {
+    display: inline-grid;
+    place-items: center;
+    min-width: 32px;
+    height: 32px;
+    font-family: $font-main;
+    color: $brand;
+    background: #e8eaed;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  &__heading {
+    padding-left: 3.5px;
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    vertical-align: middle;
+  }
+
+  &__author {
+    padding-left: 48px;
+    padding-top: 1.5px;
+    font-family: $font-text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $brand;
+  }
+
+  &__meta {
+    padding-left: 48px;
+    display: flex;
+    gap: 12px;
+    font-family: $font-text;
+    font-weight: 500;
+    font-size: 16px;
+    color: #9da3ae;
+  }
+
+  &__comments {
+    display: flex;
+    gap: 2px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__image {
+    width: 200px;
+    height: 124px;
+  }
+}
