@@ -1,0 +1,74 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.sidebar {
+  @include toggle-hidden;
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: 260px;
+  height: 100vh;
+  background: $background-main;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  padding: 60px 24px;
+  z-index: 1000;
+
+  &_open {
+    @include toggle-shown;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: $text-main;
+      border-radius: 2px;
+    }
+
+    span:first-child {
+      transform: rotate(45deg) translateY(3px);
+    }
+    span:last-child {
+      transform: rotate(-45deg) translateY(-3px);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  a {
+    color: $text-main;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+.overlay {
+  @include toggle-hidden;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+
+  &_open {
+    @include toggle-shown;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+}

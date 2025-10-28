@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+
+.button {
+  padding: 9px 23px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+
+  &_primary {
+    background: $brand;
+    color: #fff;
+  }
+}
