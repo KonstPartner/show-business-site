@@ -1,7 +1,8 @@
 @use '../base/variables' as *;
 
 .main {
-  padding: 40px 80px;
+  padding-inline: 80px;
+  padding-block: 40px 85px;
 
   &__news {
     display: flex;
