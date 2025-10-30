@@ -1,22 +1,21 @@
 @use '../base/variables' as *;
+@use '../base/mixins' as *;
 
 .footer {
+  @include flex(column, flex-start, 20px);
   border-top: 2px solid #9da3ae;
   padding: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
 
   &__logo {
     font-family: $font-main;
-    font-weight: 600;
+    font-weight: $font-weight-base;
     font-size: 24px;
   }
 
   &__details {
-    font-family:$font-text;
-    font-weight: 400;
-    font-size: 18px;
+    font-family: $font-text;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-md;
     text-transform: uppercase;
   }
 

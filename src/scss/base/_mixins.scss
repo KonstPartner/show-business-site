@@ -9,3 +9,10 @@
   visibility: visible;
   pointer-events: auto;
 }
+
+@mixin flex($direction: row, $justify: flex-start, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: $gap;
+}

@@ -6,12 +6,13 @@
   position: fixed;
   inset: 0 0 0 auto;
   width: 260px;
-  height: 100vh;
+  height: 100svh;
+  min-height: 100dvh;
   background: $background-main;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   padding: 60px 24px;
-  z-index: 1000;
+  z-index: $z-index-sidebar;
 
   &_open {
     @include toggle-shown;
@@ -25,38 +26,35 @@
     right: 25px;
     width: 24px;
     height: 24px;
-    border: none;
+    border: 0;
     background: none;
     cursor: pointer;
+  }
 
-    span {
-      display: block;
-      width: 24px;
-      height: 3px;
-      background: $text-main;
-      border-radius: 2px;
-    }
-
-    span:first-child {
-      transform: rotate(45deg) translateY(3px);
-    }
-    span:last-child {
-      transform: rotate(-45deg) translateY(-3px);
-    }
+  &__close-line {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: $text-main;
+    border-radius: 2px;
+  }
+  &__close-line:first-child {
+    transform: rotate(45deg) translateY(3px);
+  }
+  &__close-line:last-child {
+    transform: rotate(-45deg) translateY(-3px);
   }
 
   &__list {
+    @include flex(column, start, 20px);
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
-  a {
-    color: $text-main;
-    font-size: 18px;
+  &__link {
+    font-size: $font-size-md;
+    font-weight: $font-weight-regular;
+    color: $font-text;
     text-decoration: none;
-    font-weight: 500;
   }
 }
 
@@ -65,7 +63,7 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 900;
+  z-index: $z-index-overlay;
 
   &_open {
     @include toggle-shown;

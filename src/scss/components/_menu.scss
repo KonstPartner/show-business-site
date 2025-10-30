@@ -1,0 +1,27 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.menu {
+  display: flex;
+
+  &__list {
+    @include flex(row, flex-start, 30px);
+    align-items: center;
+    list-style: none;
+  }
+
+  &__link {
+    font-family: $font-text;
+    font-size: $font-size-base;
+    display: inline-block;
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 780px) {
+    display: none;
+  }
+}

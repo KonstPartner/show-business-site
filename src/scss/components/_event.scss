@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.event {
+  @include flex(column, flex-start, 10px);
+  min-height: 606px;
+  width: 48%;
+  padding-bottom: 15px;
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 780px) {
+      font-size: 64px;
+    }
+  }
+
+  &__text {
+    font-family: $font-text;
+    font-size: $font-size-md;
+  }
+
+  @media (max-width: 1159px) {
+    width: 90%;
+    min-height: unset;
+    gap: 15px;
+  }
+}
