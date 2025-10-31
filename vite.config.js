@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: "/show-business-site/",
+  base: '/show-business-site/',
   server: { open: true },
-  build: { outDir: "dist" }
+  build: { outDir: 'dist' },
+  cssCodeSplit: true,
+  minify: 'esbuild',
 });

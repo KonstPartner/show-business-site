@@ -1,790 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@400;600&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Show Business</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header__bar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Show Business — latest celebrity news and entertainment insights.">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" sizes="192x192" href="/web-app-manifest-192x192.png">
+  <link rel="icon" sizes="512x512" href="/web-app-manifest-512x512.png">
+
+  <title>Show Business</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__bar">
+      <h1>
         <a href="/" class="header__logo">SHOW BUSINESS</a>
+      </h1>
 
-        <nav class="menu" aria-label="Primary navigation">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Explore</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Inspiration</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__cta-wrapper">
-          <button class="button button--primary header__cta" type="button">
-            Log in
-          </button>
-        </div>
-
-        <button
-          class="header__burger"
-          type="button"
-          aria-label="Open menu"
-          aria-controls="mobile-sidebar"
-          aria-expanded="false"
-        >
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-        </button>
-      </div>
-
-      <div class="overlay" aria-hidden="true"></div>
-
-      <nav
-        class="sidebar"
-        id="mobile-sidebar"
-        aria-label="Mobile navigation"
-        tabindex="-1"
-      >
-        <button class="sidebar__close" type="button" aria-label="Close menu">
-          <span class="sidebar__close-line"></span>
-          <span class="sidebar__close-line"></span>
-        </button>
-
-        <ul class="sidebar__list">
-          <li>
-            <a class="sidebar__link" href="#">Home</a>
+      <nav class="menu" aria-label="Primary navigation">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
           </li>
-          <li>
-            <a class="sidebar__link" href="#">Explore</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Explore</a>
           </li>
-          <li>
-            <a class="sidebar__link" href="#">Inspiration</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Inspiration</a>
           </li>
-          <li>
-            <a class="sidebar__link" href="#">Contact us</a>
-          </li>
-          <li>
-            <a class="sidebar__link" href="#">Log in</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact us</a>
           </li>
         </ul>
       </nav>
-    </header>
-
-    <main class="container main">
-      <section class="event">
-        <img
-          class="event__image"
-          src="./src/assets/images/event/princess-beatrices-wedding.png"
-          alt="Princess Beatrice's Wedding photo"
-        />
-        <h2 class="event__title">Princess Beatrice's Wedding</h2>
-        <p class="event__text">
-          Coverage of Princess Beatrice's wedding to Edoardo Mapelli Mozzi in
-          July 2020. Coverage of Princess Beatrice's wedding to Edoardo Mapelli.
-        </p>
-      </section>
-
-      <section class="stories">
-        <h3 class="stories__title">Top Stories</h3>
-        <ul class="stories__list">
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">1</span>
-                <h4 class="stories__heading">
-                  Kim Kardashian and Kanye West Divorce
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/kim-kardashian-and-kanye-west-divorce.png"
-              alt="Kim Kardashian and Kanye West Divorce photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">2</span>
-                <h4 class="stories__heading">
-                  Prince Harry and Meghan Markle's Exit from Royal Duties
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/prince-harry-and-meghan-markles-exit-from-royal-duties.png"
-              alt="Prince Harry and Meghan Markle's Exit from Royal Duties photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">3</span>
-                <h4 class="stories__heading">
-                  Adele's weight extremal loss transformation
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/adeles-weight-extremal-loss-transformation.png"
-              alt="Adele's weight extremal loss transformation photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">4</span>
-                <h4 class="stories__heading">
-                  Bennifer Reunion (Jennifer Lopez and Ben Affleck)
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/bennifer-reunion-jennifer-lopez-and-ben-affleck.png"
-              alt="Bennifer Reunion (Jennifer Lopez and Ben Affleck) photo"
-              class="stories__image"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section class="stories">
-        <h3 class="stories__title">Top Stories</h3>
-        <ul class="stories__list">
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">1</span>
-                <h4 class="stories__heading">Taylor Swift's Re-Recordings</h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/taylor-swifts-re-recordings.png"
-              alt="Taylor Swift's Re-Recordings photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">2</span>
-                <h4 class="stories__heading">
-                  Prince Harry and Meghan Markle's Oprah Interview Fallout
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/prince-harry-and-meghan-markles-oprah-interview-fallout.png"
-              alt="Prince Harry and Meghan Markle's Oprah Interview Fallout photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">3</span>
-                <h4 class="stories__heading">
-                  Kanye West's Donda Album Release and Public Statements
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/kanye-wests-donda-album-release-and-public-statements.png"
-              alt="Kanye West's Donda Album Release and Public Statements photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">4</span>
-                <h4 class="stories__heading">
-                  Britney Spears' Conservatorship Battle
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/britney-spears-conservatorship-battle.png"
-              alt="Britney Spears' Conservatorship Battle photo"
-              class="stories__image"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section class="event">
-        <img
-          class="event__image"
-          src="./src/assets/images/event/prince-philips-passing.png"
-          alt="Prince Philip's Passing photo"
-        />
-        <h2 class="event__title">Prince Philip's Passing</h2>
-        <p class="event__text">
-          Reflections and tributes following the death of Prince Philip, Duke of
-          Edinburgh, in April 2021.
-        </p>
-      </section>
-
-      <section class="event">
-        <img
-          class="event__image"
-          src="./src/assets/images/event/lady-gaga-in-house-of-gucci.png"
-          alt="Lady Gaga in 'House of Gucci' photo"
-        />
-        <h2 class="event__title">Lady Gaga in 'House of Gucci'</h2>
-        <p class="event__text">
-          News and reviews surrounding Lady Gaga's performance in the film
-          "House of Gucci," where she portrays Patrizia Reggiani. Lady Gaga's
-          performance.
-        </p>
-      </section>
-
-      <section class="stories">
-        <h3 class="stories__title">Top Stories</h3>
-        <ul class="stories__list">
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">1</span>
-                <h4 class="stories__heading">
-                  Queen Elizabeth II's Platinum Jubilee Celebrations
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/queen-elizabethIIs-platinum-jubilee-celebrations.png"
-              alt="Queen Elizabeth II's Platinum Jubilee Celebrations photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">2</span>
-                <h4 class="stories__heading">
-                  Prince William and Kate Middleton's Public Engagements
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/prince-william-and-kate-middletons-public-engagements.png"
-              alt="Prince William and Kate Middleton's Public Engagements photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">3</span>
-                <h4 class="stories__heading">
-                  Prince Harry and Meghan Markle's Activities
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/prince-harry-and-meghan-markles-activities.png"
-              alt="Prince Harry and Meghan Markle's Activities photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">4</span>
-                <h4 class="stories__heading">
-                  Royal Family Responses to Controversies
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/royal-family-responses-to-controversies.png"
-              alt="Royal Family Responses to Controversies photo"
-              class="stories__image"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section class="stories">
-        <h3 class="stories__title">Top Stories</h3>
-        <ul class="stories__list">
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">1</span>
-                <h4 class="stories__heading">
-                  The Royal Family's Social Media Presence
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/the-royal-familys-social-media-presence.png"
-              alt="The Royal Family's Social Media Presence photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">2</span>
-                <h4 class="stories__heading">Zendaya's Career Achievements</h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/zendayas-career-achievements.png"
-              alt="Zendaya's Career Achievements photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">3</span>
-                <h4 class="stories__heading">
-                  Prince William's Earthshot Prize Initiative
-                </h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/prince-williams-earthshot-prize-initiative.png"
-              alt="Prince William's Earthshot Prize Initiative photo"
-              class="stories__image"
-            />
-          </li>
-
-          <li class="stories__item">
-            <div class="stories__info">
-              <div class="stories__header">
-                <span class="stories__number">4</span>
-                <h4 class="stories__heading">Chris Pratt's Film Projects</h4>
-              </div>
-
-              <p class="stories__author">David Pierce</p>
-
-              <div class="stories__meta">
-                <time class="stories__time" datetime="10:00">10:00 AM</time>
-                <span class="stories__divider" aria-hidden="true">|</span>
-                <span class="stories__comments">
-                  <img
-                    src="./src/assets/svg/Chat.svg"
-                    alt=""
-                    class="stories__icon"
-                    aria-hidden="true"
-                  />
-                  <span class="stories__comments-count">87</span>
-                </span>
-              </div>
-            </div>
-
-            <img
-              src="./src/assets/images/stories/chris-pratts-film-projects.png"
-              alt="Chris Pratt's Film Projects photo"
-              class="stories__image"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section class="event">
-        <img
-          class="event__image"
-          src="./src/assets/images/event/the-rock-johnsons-projects.png"
-          alt="'The Rock' Johnson's Projects photo"
-        />
-        <h2 class="event__title">'The Rock' Johnson's Projects</h2>
-        <p class="event__text">
-          Updates on Dwayne Johnson's upcoming film and television projects, as
-          well as his business ventures and philanthropic activities. Well as
-          his business ventures and philanthropic activities.
-        </p>
-      </section>
-
-      <section class="news-grid">
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/ryan-reynold-and-blake-livelys-philanthropy.png"
-            alt="Ryan Reynolds and Blake Lively's Philanthropy photo"
-          />
-          <h5 class="news-grid__title">
-            Ryan Reynolds and Blake Lively's Philanthropy
-          </h5>
-          <p class="news-grid__text">
-            Updates on the philanthropic activities of Ryan Reynolds.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/prince-andrews-legal-issues.png"
-            alt="Prince Andrew's Legal Issues photo"
-          />
-          <h5 class="news-grid__title">Prince Andrew's Legal Issues</h5>
-          <p class="news-grid__text">
-            Ongoing coverage of legal matters involving Prince Andrew.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/reese-witherspoons-production-ventures.png"
-            alt="Reese Witherspoon's Production Ventures photo"
-          />
-          <h5 class="news-grid__title">
-            Reese Witherspoon's Production Ventures
-          </h5>
-          <p class="news-grid__text">
-            News on Leonardo DiCaprio's ongoing environmental.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/queen-elizabeth-IIs-health-updates.png"
-            alt="Queen Elizabeth II's Health Updates photo"
-          />
-          <h5 class="news-grid__title">Queen Elizabeth II's Health Updates</h5>
-          <p class="news-grid__text">
-            Periodic updates on the health of Queen Elizabeth II.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/prince-harrys-memoir-announcement.png"
-            alt="Prince Harry's Memoir Announcement photo"
-          />
-          <h5 class="news-grid__title">Prince Harry's Memoir Announcement</h5>
-          <p class="news-grid__text">
-            Reports on Prince Harry's announcement of a forthcoming.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/leonardo-dicaprios-environmental-advocacy.png"
-            alt="Leonardo DiCaprio's Environmental Advocacy photo"
-          />
-          <h5 class="news-grid__title">
-            Leonardo DiCaprio's Environmental Advocacy
-          </h5>
-          <p class="news-grid__text">
-            News on Leonardo DiCaprio's ongoing environmental advocacy.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/princess-eugenies-aregnancy-nnouncement.png"
-            alt="Princess Eugenie's Pregnancy Announcement photo"
-          />
-          <h5 class="news-grid__title">
-            Princess Eugenie's Pregnancy Announcement
-          </h5>
-          <p class="news-grid__text">
-            News about Princess Eugenie, daughter of Prince Andrew.
-          </p>
-        </article>
-
-        <article class="news-grid__item">
-          <img
-            src="./src/assets/images/news-grid/emma-stones-role-in-cruella.png"
-            alt="Emma Stone's Role in 'Cruella' photo"
-          />
-          <h5 class="news-grid__title">Emma Stone's Role in "Cruella"</h5>
-          <p class="news-grid__text">
-            Coverage of Emma Stone's role as the iconic Disney villain.
-          </p>
-        </article>
-      </section>
-    </main>
-
-    <footer class="container footer">
-      <p class="footer__logo">Logo</p>
-      <p class="footer__details">
-        Contact / Tip us / Community guidelines / About / Etnics statement
+      <div class="header__cta-wrapper">
+        <button class="button button--primary header__cta" type="button">
+          Log in
+        </button>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Open menu" aria-controls="mobile-sidebar"
+        aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+
+    <div class="overlay" aria-hidden="true"></div>
+
+    <nav class="sidebar" id="mobile-sidebar" aria-label="Mobile navigation" tabindex="-1">
+      <button class="sidebar__close" type="button" aria-label="Close menu">
+        <span class="sidebar__close-line"></span>
+        <span class="sidebar__close-line"></span>
+      </button>
+
+      <ul class="sidebar__list">
+        <li>
+          <a class="sidebar__link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="#">Explore</a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="#">Inspiration</a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="#">Contact us</a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="#">Log in</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <section class="event">
+      <picture>
+        <source srcset="./src/assets/webp/princess-beatrices-wedding.webp" type="image/webp">
+        <img width="620" height="410" class="event__image" fetchpriority="high"
+          src="./src/assets/images/event/princess-beatrices-wedding.png" alt="Princess Beatrice's Wedding photo">
+      </picture>
+
+      <h2 class="event__title">Princess Beatrice's Wedding</h2>
+      <p class="event__text">
+        Coverage of Princess Beatrice's wedding to Edoardo Mapelli Mozzi in
+        July 2020. Coverage of Princess Beatrice's wedding to Edoardo Mapelli.
       </p>
-    </footer>
-  </body>
+    </section>
+
+    <section class="stories">
+      <p class="stories__title">Top Stories</p>
+      <ul class="stories__list">
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">1</span>
+              <h3 class="story__heading">
+                Kim Kardashian and Kanye West Divorce
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/kim-kardashian-and-kanye-west-divorce.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/kim-kardashian-and-kanye-west-divorce.png"
+              alt="Kim Kardashian and Kanye West Divorce photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">2</span>
+              <h3 class="story__heading">
+                Prince Harry and Meghan Markle's Exit from Royal Duties
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/prince-harry-and-meghan-markles-exit-from-royal-duties.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/prince-harry-and-meghan-markles-exit-from-royal-duties.png"
+              alt="Prince Harry and Meghan Markle's Exit from Royal Duties photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">3</span>
+              <h3 class="story__heading">
+                Adele's weight extremal loss transformation
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/adeles-weight-extremal-loss-transformation.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/adeles-weight-extremal-loss-transformation.png"
+              alt="Adele's weight extremal loss transformation photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">4</span>
+              <h3 class="story__heading">
+                Bennifer Reunion (Jennifer Lopez and Ben Affleck)
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/bennifer-reunion-jennifer-lopez-and-ben-affleck.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/bennifer-reunion-jennifer-lopez-and-ben-affleck.png"
+              alt="Bennifer Reunion (Jennifer Lopez and Ben Affleck) photo" class="story__image">
+          </picture>
+        </li>
+      </ul>
+    </section>
+
+    <section class="stories">
+      <p class="stories__title">Top Stories</p>
+      <ul class="stories__list">
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">1</span>
+              <h3 class="story__heading">Taylor Swift's Re-Recordings</h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="./src/assets/webp/taylor-swifts-re-recordings.webp" type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/taylor-swifts-re-recordings.png" alt="Taylor Swift's Re-Recordings photo"
+              class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">2</span>
+              <h3 class="story__heading">
+                Prince Harry and Meghan Markle's Oprah Interview Fallout
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/prince-harry-and-meghan-markles-oprah-interview-fallout.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/prince-harry-and-meghan-markles-oprah-interview-fallout.png"
+              alt="Prince Harry and Meghan Markle's Oprah Interview Fallout photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">3</span>
+              <h3 class="story__heading">
+                Kanye West's Donda Album Release and Public Statements
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/kanye-wests-donda-album-release-and-public-statements.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/kanye-wests-donda-album-release-and-public-statements.png"
+              alt="Kanye West's Donda Album Release and Public Statements photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">4</span>
+              <h3 class="story__heading">
+                Britney Spears' Conservatorship Battle
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/britney-spears-conservatorship-battle.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/britney-spears-conservatorship-battle.png"
+              alt="Britney Spears' Conservatorship Battle photo" class="story__image">
+          </picture>
+        </li>
+      </ul>
+    </section>
+
+    <section class="event">
+      <picture>
+        <source srcset="./src/assets/webp/prince-philips-passing.webp" type="image/webp">
+        <img width="620" height="410" loading="lazy" class="event__image"
+          src="./src/assets/images/event/prince-philips-passing.png" alt="Prince Philip's Passing photo">
+      </picture>
+      <h2 class="event__title">Prince Philip's Passing</h2>
+      <p class="event__text">
+        Reflections and tributes following the death of Prince Philip, Duke of
+        Edinburgh, in April 2021.
+      </p>
+    </section>
+
+    <section class="event">
+      <picture>
+        <source srcset="./src/assets/webp/lady-gaga-in-house-of-gucci.webp" type="image/webp">
+        <img width="620" height="410" loading="lazy" class="event__image"
+          src="./src/assets/images/event/lady-gaga-in-house-of-gucci.png" alt="Lady Gaga in 'House of Gucci' photo">
+      </picture>
+      <h2 class="event__title">Lady Gaga in 'House of Gucci'</h2>
+      <p class="event__text">
+        News and reviews surrounding Lady Gaga's performance in the film
+        "House of Gucci," where she portrays Patrizia Reggiani. Lady Gaga's
+        performance.
+      </p>
+    </section>
+
+    <section class="stories">
+      <p class="stories__title">Top Stories</p>
+      <ul class="stories__list">
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">1</span>
+              <h3 class="story__heading">
+                Queen Elizabeth II's Platinum Jubilee Celebrations
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/queen-elizabethIIs-platinum-jubilee-celebrations.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/queen-elizabethIIs-platinum-jubilee-celebrations.png"
+              alt="Queen Elizabeth II's Platinum Jubilee Celebrations photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">2</span>
+              <h3 class="story__heading">
+                Prince William and Kate Middleton's Public Engagements
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/prince-william-and-kate-middletons-public-engagements.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/prince-william-and-kate-middletons-public-engagements.png"
+              alt="Prince William and Kate Middleton's Public Engagements photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">3</span>
+              <h3 class="story__heading">
+                Prince Harry and Meghan Markle's Activities
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/prince-harry-and-meghan-markles-activities.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/prince-harry-and-meghan-markles-activities.png"
+              alt="Prince Harry and Meghan Markle's Activities photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">4</span>
+              <h3 class="story__heading">
+                Royal Family Responses to Controversies
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/royal-family-responses-to-controversies.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/royal-family-responses-to-controversies.png"
+              alt="Royal Family Responses to Controversies photo" class="story__image">
+          </picture>
+        </li>
+      </ul>
+    </section>
+
+    <section class="stories">
+      <p class="stories__title">Top Stories</p>
+      <ul class="stories__list">
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">1</span>
+              <h3 class="story__heading">
+                The Royal Family's Social Media Presence
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/the-royal-familys-social-media-presence.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/the-royal-familys-social-media-presence.png"
+              alt="The Royal Family's Social Media Presence photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">2</span>
+              <h3 class="story__heading">Zendaya's Career Achievements</h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="./src/assets/webp/zendayas-career-achievements.webp" type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/zendayas-career-achievements.png"
+              alt="Zendaya's Career Achievements photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">3</span>
+              <h3 class="story__heading">
+                Prince William's Earthshot Prize Initiative
+              </h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="
+                  ./src/assets/webp/prince-williams-earthshot-prize-initiative.webp
+                " type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/prince-williams-earthshot-prize-initiative.png"
+              alt="Prince William's Earthshot Prize Initiative photo" class="story__image">
+          </picture>
+        </li>
+
+        <li class="story">
+          <div class="story__info">
+            <div class="story__header">
+              <span class="story__number">4</span>
+              <h3 class="story__heading">Chris Pratt's Film Projects</h3>
+            </div>
+
+            <p class="story__author">David Pierce</p>
+
+            <div class="story__meta">
+              <time class="story__time" datetime="10:00">10:00 AM</time>
+              <span class="story__divider" aria-hidden="true">|</span>
+              <span class="story__comments">
+                <img loading="lazy" src="./src/assets/svg/Chat.svg" alt="" class="stories__icon" aria-hidden="true">
+                <span class="story__comments-count">87</span>
+              </span>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="./src/assets/webp/chris-pratts-film-projects.webp" type="image/webp">
+            <img width="200" height="124" loading="lazy"
+              src="./src/assets/images/stories/chris-pratts-film-projects.png" alt="Chris Pratt's Film Projects photo"
+              class="story__image">
+          </picture>
+        </li>
+      </ul>
+    </section>
+
+    <section class="event">
+      <picture>
+        <source srcset="./src/assets/webp/the-rock-johnsons-projects.webp" type="image/webp">
+        <img width="620" height="410" loading="lazy" class="event__image"
+          src="./src/assets/images/event/the-rock-johnsons-projects.png" alt="'The Rock' Johnson's Projects photo">
+      </picture>
+      <h2 class="event__title">'The Rock' Johnson's Projects</h2>
+      <p class="event__text">
+        Updates on Dwayne Johnson's upcoming film and television projects, as
+        well as his business ventures and philanthropic activities. Well as
+        his business ventures and philanthropic activities.
+      </p>
+    </section>
+
+    <div class="news-grid">
+      <article class="news">
+        <picture>
+          <source srcset="
+                ./src/assets/webp/ryan-reynold-and-blake-livelys-philanthropy.webp
+              " type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/ryan-reynold-and-blake-livelys-philanthropy.png"
+            alt="Ryan Reynolds and Blake Lively's Philanthropy photo">
+        </picture>
+        <h4 class="news__title">
+          Ryan Reynolds and Blake Lively's Philanthropy
+        </h4>
+        <p class="news__text">
+          Updates on the philanthropic activities of Ryan Reynolds.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="./src/assets/webp/prince-andrews-legal-issues.webp" type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/prince-andrews-legal-issues.png"
+            alt="Prince Andrew's Legal Issues photo">
+        </picture>
+        <h4 class="news__title">Prince Andrew's Legal Issues</h4>
+        <p class="news__text">
+          Ongoing coverage of legal matters involving Prince Andrew.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="
+                ./src/assets/webp/reese-witherspoons-production-ventures.webp
+              " type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/reese-witherspoons-production-ventures.png"
+            alt="Reese Witherspoon's Production Ventures photo">
+        </picture>
+        <h4 class="news__title">
+          Reese Witherspoon's Production Ventures
+        </h4>
+        <p class="news__text">
+          News on Leonardo DiCaprio's ongoing environmental.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="./src/assets/webp/queen-elizabeth-IIs-health-updates.webp" type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/queen-elizabeth-IIs-health-updates.png"
+            alt="Queen Elizabeth II's Health Updates photo">
+        </picture>
+        <h4 class="news__title">Queen Elizabeth II's Health Updates</h4>
+        <p class="news__text">
+          Periodic updates on the health of Queen Elizabeth II.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="./src/assets/webp/prince-harrys-memoir-announcement.webp" type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/prince-harrys-memoir-announcement.png"
+            alt="Prince Harry's Memoir Announcement photo">
+        </picture>
+        <h4 class="news__title">Prince Harry's Memoir Announcement</h4>
+        <p class="news__text">
+          Reports on Prince Harry's announcement of a forthcoming.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="
+                ./src/assets/webp/leonardo-dicaprios-environmental-advocacy.webp
+              " type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/leonardo-dicaprios-environmental-advocacy.png"
+            alt="Leonardo DiCaprio's Environmental Advocacy photo">
+        </picture>
+        <h4 class="news__title">
+          Leonardo DiCaprio's Environmental Advocacy
+        </h4>
+        <p class="news__text">
+          News on Leonardo DiCaprio's ongoing environmental advocacy.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="
+                ./src/assets/webp/princess-eugenies-aregnancy-nnouncement.webp
+              " type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/princess-eugenies-aregnancy-nnouncement.png"
+            alt="Princess Eugenie's Pregnancy Announcement photo">
+        </picture>
+        <h4 class="news__title">
+          Princess Eugenie's Pregnancy Announcement
+        </h4>
+        <p class="news__text">
+          News about Princess Eugenie, daughter of Prince Andrew.
+        </p>
+      </article>
+
+      <article class="news">
+        <picture>
+          <source srcset="./src/assets/webp/emma-stones-role-in-cruella.webp" type="image/webp">
+          <img width="290" height="240" loading="lazy" class="news__image"
+            src="./src/assets/images/news-grid/emma-stones-role-in-cruella.png"
+            alt="Emma Stone's Role in 'Cruella' photo">
+        </picture>
+        <h4 class="news__title">Emma Stone's Role in "Cruella"</h4>
+        <p class="news__text">
+          Coverage of Emma Stone's role as the iconic Disney villain.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <h5 class="footer__logo">Logo</h5>
+    <p class="footer__details">
+      Contact / Tip us / Community guidelines / About / Etnics statement
+    </p>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

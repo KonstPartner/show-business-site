@@ -2,20 +2,16 @@
 @use '../base/mixins' as *;
 
 .footer {
-  @include flex(column, flex-start, 20px);
+  @include flex(column, flex-start, 26px);
   border-top: 2px solid #9da3ae;
   padding: 80px;
 
   &__logo {
-    font-family: $font-main;
-    font-weight: $font-weight-base;
-    font-size: 24px;
+    @include font($font-main, 24px, $font-weight-base);
   }
 
   &__details {
-    font-family: $font-text;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-md;
+    @include font($font-text, $font-size-md, $font-weight-regular);
     text-transform: uppercase;
   }
 

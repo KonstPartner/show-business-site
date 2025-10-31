@@ -14,7 +14,7 @@
   padding: 60px 24px;
   z-index: $z-index-sidebar;
 
-  &_open {
+  &--open {
     @include toggle-shown;
     transform: translateX(0);
     transition: transform 0.3s ease;
@@ -53,20 +53,7 @@
   &__link {
     font-size: $font-size-md;
     font-weight: $font-weight-regular;
-    color: $font-text;
+    color: $text-main;
     text-decoration: none;
-  }
-}
-
-.overlay {
-  @include toggle-hidden;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: $z-index-overlay;
-
-  &_open {
-    @include toggle-shown;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 }

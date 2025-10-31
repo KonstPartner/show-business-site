@@ -16,3 +16,9 @@
   justify-content: $justify;
   gap: $gap;
 }
+
+@mixin font($font-family, $font-size, $font-weight: 400) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

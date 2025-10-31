@@ -2,10 +2,10 @@
 @use '../base/mixins' as *;
 
 .main {
-  @include flex(row, center, 79px 40px);
+  @include flex(row, center, 80px 40px);
   flex-wrap: wrap;
   padding-inline: 73px;
-  padding-block: 40px 85px;
+  padding-block: 41px 50px;
 
   @media (max-width: 780px) {
     padding-inline: 20px;

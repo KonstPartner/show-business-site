@@ -7,10 +7,13 @@
   width: 48%;
   padding-bottom: 15px;
 
+  &__image {
+    width: unset;
+    height: unset;
+  }
+
   &__title {
-    font-family: $font-heading;
-    font-size: $font-size-xl;
-    font-weight: $font-weight-regular;
+    @include font($font-heading, $font-size-xl, $font-weight-regular);
     letter-spacing: 0.02em;
 
     @media (max-width: 780px) {
@@ -19,8 +22,7 @@
   }
 
   &__text {
-    font-family: $font-text;
-    font-size: $font-size-md;
+    @include font($font-text, $font-size-md);
   }
 
   @media (max-width: 1159px) {

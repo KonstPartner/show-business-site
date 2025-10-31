@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.overlay {
+  @include toggle-hidden;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: $z-index-overlay;
+
+  &--open {
+    @include toggle-shown;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+}
