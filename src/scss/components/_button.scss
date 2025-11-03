@@ -1,8 +1,8 @@
 @use '../base/variables' as *;
+@use '../base/mixins' as *;
 
 .button {
-  font-size: $font-size-sm;
-  font-weight: $font-weight-base;
+  @include font($font-main, $font-size-sm, $font-weight-base);
   padding: 8px 23px;
   border: 0;
   border-radius: 6px;

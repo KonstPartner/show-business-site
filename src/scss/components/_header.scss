@@ -9,8 +9,7 @@
   }
 
   &__logo {
-    font-weight: $font-weight-base;
-    font-size: 24px;
+    @include font($font-main, 24px, $font-weight-base);
     color: $brand;
     margin-left: 10px;
   }
@@ -27,13 +26,13 @@
     background: none;
     border: 0;
     cursor: pointer;
-  }
 
-  &__burger-line {
-    display: block;
-    height: 3px;
-    background: $text-main;
-    border-radius: 2px;
+    &-line {
+      display: block;
+      height: 3px;
+      background: $text-main;
+      border-radius: 2px;
+    }
   }
 
   @media (max-width: 780px) {

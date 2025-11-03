@@ -29,20 +29,21 @@
     border: 0;
     background: none;
     cursor: pointer;
-  }
 
-  &__close-line {
-    display: block;
-    width: 24px;
-    height: 3px;
-    background: $text-main;
-    border-radius: 2px;
-  }
-  &__close-line:first-child {
-    transform: rotate(45deg) translateY(3px);
-  }
-  &__close-line:last-child {
-    transform: rotate(-45deg) translateY(-3px);
+    &-line {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: $text-main;
+      border-radius: 2px;
+
+      &:first-child {
+        transform: rotate(45deg) translateY(3px);
+      }
+      &:last-child {
+        transform: rotate(-45deg) translateY(-3px);
+      }
+    }
   }
 
   &__list {
@@ -51,8 +52,7 @@
   }
 
   &__link {
-    font-size: $font-size-md;
-    font-weight: $font-weight-regular;
+    @include font($font-main, $font-size-md, $font-weight-regular);
     color: $text-main;
     text-decoration: none;
   }
